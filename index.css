@@ -1,0 +1,175 @@
+/* General Body Styles */
+body {
+   font-family: 'Arial', sans-serif; /* Sets a clean, sans-serif font */
+   margin: 0; /* Removes default margin */
+   padding: 0; /* Removes default padding */
+   background-color: #f4f4f4; /* Light grey background color */
+   color: #333; /* Dark grey text color */
+   line-height: 1.6; /* Adds spacing between lines for readability */
+}
+
+/* Header Section */
+header {
+   background-color: #3498db; /* Blue background */
+   color: white; /* White text */
+   padding: 10px 0; /* Padding at the top and bottom */
+   text-align: center; /* Center align the text */
+   position: relative; /* Allows positioning of child elements */
+   border-radius: 10px; /* Rounded corners */
+   margin: 0 20px; /* Adds horizontal margins */
+}
+
+header h1 {
+   margin: 5px 0; /* Small top and bottom margin */
+   font-size: 2rem; /* Medium heading size */
+}
+
+header p {
+   margin: 5px 0; /* Small top and bottom margin */
+   font-size: 1rem; /* Regular paragraph size */
+}
+
+/* Profile Image Styles */
+.profile-img {
+   width: 150px; /* Sets the image width */
+   height: 150px; /* Sets the image height */
+   border-radius: 50%; /* Makes the image circular */
+   margin-top: 10px; /* Adds space above the image */
+   border: 4px solid white; /* White border around the image */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Button Style for Contact Me */
+.contact-btn {
+   background-color: white; /* White background */
+   color: #3498db; /* Blue text */
+   padding: 10px 20px; /* Adds padding */
+   border-radius: 5px; /* Rounded corners */
+   font-size: 1rem; /* Regular button size */
+   text-decoration: none; /* Removes underline from links */
+   margin-top: 10px; /* Adds space above the button */
+   display: inline-block; /* Makes the button inline but allows for padding/margins */
+}
+
+.contact-btn:hover {
+   background-color: #2980b9; /* Darker blue background on hover */
+   color: white; /* White text on hover */
+}
+
+/* Section Styling */
+section {
+   margin: 30px; /* Adds space around sections */
+   padding: 20px; /* Adds padding inside the sections */
+   background-color: white; /* White background */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   border-radius: 8px; /* Rounded corners */
+}
+
+/* About Section */
+.about h2 {
+   font-size: 2rem; /* Large heading */
+   margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Skills Section */
+.skills ul {
+   list-style-type: none; /* Removes default bullet points */
+   padding: 0; /* Removes padding */
+}
+
+.skills ul li {
+   background-color: #3498db; /* Blue background */
+   color: white; /* White text */
+   padding: 10px; /* Adds padding inside each list item */
+   margin-bottom: 5px; /* Space between each skill item */
+   display: inline-block; /* Makes the list items inline-block */
+   border-radius: 5px; /* Rounded corners */
+   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+}
+
+.skills ul li:hover {
+   background-color: #2980b9; /* Darker blue on hover */
+   transform: translateY(-5px); /* Lifts the item on hover */
+   cursor: pointer; /* Shows pointer to indicate interactivity */
+}
+
+/* Projects Section */
+.projects {
+   display: flex; /* Flexbox for layout */
+   justify-content: space-between; /* Spreads items across the row */
+   flex-wrap: wrap; /* Wraps items on smaller screens */
+   gap: 20px; /* Adds space between items */
+}
+
+.project {
+   flex: 1 1 25%; /* Each project takes up 25% of the container width */
+   background-color: white; /* White background */
+   padding: 20px; /* Padding inside the project card */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+   border-radius: 8px; /* Rounded corners */
+   margin-bottom: 20px; /* Space below the project card */
+   opacity: 0; /* Initially hidden for animation */
+   animation: fadeInUp 2.5s ease forwards; /* Animation for appearing effect */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+   0% {
+       opacity: 0; /* Hidden at the start */
+       transform: translateY(20px); /* Starts 20px lower */
+   }
+   100% {
+       opacity: 1; /* Fully visible at the end */
+       transform: translateY(0); /* Ends at original position */
+   }
+}
+
+/* Project Images */
+.project-img {
+   width: 500px; /* Image width */
+   height: 450px; /* Image height */
+   border-radius: 8px; /* Rounds the corners */
+   margin-bottom: 10px; /* Space below the image */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+   transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover animations */
+}
+
+.project-img:hover {
+   transform: scale(1.05); /* Zoom effect on hover */
+   filter: brightness(1.1); /* Brightens image on hover */
+}
+
+/* Project Link Styles */
+.project-link {
+   background-color: #3498db; /* Blue background */
+   color: white; /* White text */
+   padding: 10px 15px; /* Padding inside the link */
+   border-radius: 5px; /* Rounded corners */
+   text-decoration: none; /* Removes default underline */
+}
+
+.project-link:hover {
+   background-color: #2980b9; /* Darker blue background on hover */
+}
+
+/* Contact Section */
+.contact a {
+   color: #3498db; /* Blue link color */
+   text-decoration: none; /* Removes underline */
+   font-weight: bold; /* Boldens the link text */
+}
+
+.contact a:hover {
+   text-decoration: underline; /* Underlines the link on hover */
+}
+
+/* Footer Styling */
+footer {
+   background-color: #333; /* Dark grey background */
+   color: white; /* White text */
+   text-align: center; /* Centered text */
+   padding: 10px; /* Padding inside the footer */
+   position: relative; /* Allows further positioning */
+   bottom: 0; /* Aligns the footer to the bottom */
+   width: 100%; /* Stretches footer across the page */
+}
